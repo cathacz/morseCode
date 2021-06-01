@@ -42,25 +42,43 @@ import "../data.json";
 //     "?": "..--..",
 //   }
 // ];
-
-const Input = (props) => {
-  const [userInput, setUserInput]; = useState("");
-
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
-
-  function handleChange(e) {
-    setUserInput(e.target.value);
-  }
-  return;
-  <form onSubmit={handleSubmit}>
-    <input
-      type="textarea"
-      value={userInput}
-      onChange={handleChange}
-      placeholder="Type something..."
-    />
-  </form>;
+const Input = () => {
+  const userInput = "";
+  const characterArr = [];
+  characterArr.forEach((element) => {
+    console.log(element);
+  });
+  return (
+    <form>
+      <input
+        className="typeSomething"
+        type="text"
+        value={userInput}
+        // onChange={changeHandle}
+        placeholder="What do you wanna do?"
+      />
+    </form>
+  );
 };
+
+// const Input = (props) => {
+//   const [userInput, setUserInput]; = useState("");
+
+//   function handleSubmit(e) {
+//     e.preventDefault();
+//   }
+
+//   function handleChange(e) {
+//     setUserInput(e.target.value);
+//   }
+//   return;
+//   <form onSubmit={handleSubmit}>
+//     <input
+//       type="textarea"
+//       value={userInput}
+//       onChange={handleChange}
+//       placeholder="Type something..."
+//     />
+//   </form>;
+// };
 export default Input;
