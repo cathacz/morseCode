@@ -3,20 +3,10 @@ import React, { useState } from "react";
 // import Output from "./components/Output";
 import Data from "./data.json";
 function App() {
-  // const morseCode = Data.forEach(() => {
-  //   console.log(morseCode);
-  // });
-  // const {
-  //   id,
-  //   owner,
-  //   avatar,
-  //   title,
-  //   text,
-  //   likes,
-  //   comments,
-  //   share,
-  //   createdAt,
-  // } = obj;
+  const morseCode = Data.map((obj) => {
+    console.log(morseCode);
+  });
+  const { characterArr, morseArr } = obj;
   return (
     <React.Fragment>
       <h1>fucking Morse Code</h1>
